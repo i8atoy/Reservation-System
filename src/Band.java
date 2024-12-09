@@ -6,7 +6,7 @@ public class Band {
 
     //if no list of musicians is given
     public Band(String name){
-         this.name = name;
+        this.name = name;
         this.musicians = new ArrayList<Musician>();
     }
     //if list of musicians is given
