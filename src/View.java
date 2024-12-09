@@ -1,4 +1,5 @@
 import javax.swing.*;
 
-public class View {
+public class View extends JPanel {
+
 }
