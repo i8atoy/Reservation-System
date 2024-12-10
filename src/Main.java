@@ -1,7 +1,9 @@
-
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Bruh");
+        Model model = new Model();
+        View view = new View();
+        Controller controller = new Controller(model, view);
+
+        view.setVisible(true);
     }
 }
