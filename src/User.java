@@ -1,23 +1,37 @@
 public class User {
     private String username;
-    private String hashedPassword;
+    private String firstName;
+    private String lastName;
     private String role;
+    private String password;
 
-    public User(String username, String hashedPassword, String role) {
+    // Constructor
+    public User(String username, String firstName, String lastName, String role, String password) {
         this.username = username;
-        this.hashedPassword = hashedPassword;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.role = role;
+        this.password = password;  // Store the hashed password (optional for display, usually not needed)
     }
 
+    // Getters
     public String getUsername() {
         return username;
     }
 
-    public String getHashedPassword() {
-        return hashedPassword;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public String getRole() {
         return role;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }
